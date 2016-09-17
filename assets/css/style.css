@@ -26,6 +26,7 @@
 \*------------------------------------*/
 body {
     background-color: #fff;
+    line-height: 1.3;
 	font-size: 16px;
 	font-family: 'opensans-regular';
 	color: #8d8f92;
@@ -39,6 +40,9 @@ ul {
 }
 p {
     margin: 0;
+}
+img {
+    width: 100%;
 }
 .magic-loader{
     position: fixed;
@@ -199,19 +203,17 @@ p {
     }
     .main-slider .uk-slideshow,
     .main-slider .uk-slideshow li {
-        min-height: 250px;
+        min-height: 320px;
     }
     .slider-caption-title {
         font-size: 24px;
     }
     .slider-caption-desc {
         margin: 10px 0 20px;
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 13px;
     }
     .slider-caption-more {
         padding: 12px 20px 10px;
-        font-size: 13px;
     }
     .main-slider-dotnav {
         margin: 0 15px 10px;
@@ -226,8 +228,10 @@ p {
     PAGE BLOCKS
 \*------------------------------------*/
 .page-block {
-    margin-top: 80px;
     margin-bottom: 100px;
+}
+.page-block-padding-top {
+    padding-top: 80px;
 }
 .page-block-dark {
     background: #3a454d;
@@ -256,11 +260,13 @@ p {
 }
 @media (max-width: 767px) {
     .page-block {
-        margin-top: 50px;
         margin-bottom: 60px;
     }
+    .page-block-padding-top, .page-block-dark {
+        padding-top: 50px;
+    }
     .block-title {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 }
 /*------------------------------------*\
@@ -331,9 +337,6 @@ p {
 .team-member-img-box {
     position: relative;
 }
-.team-member-img {
-    width: 100%;
-}
 .team-member-social {
     opacity: 0;
     position: absolute;
@@ -389,6 +392,9 @@ p {
     color: #fff;
 }
 @media (max-width: 767px) {
+    .team-block {
+        margin-bottom: 30px;
+    }
     .team-member-box {
         margin-bottom: 30px !important;
     }
@@ -404,9 +410,6 @@ p {
 }
 .work-img-box {
     position: relative;
-}
-.work-img {
-    width: 100%;
 }
 .work-link {
     opacity: 0;
@@ -465,6 +468,9 @@ p {
 /*------------------------------------*\
     SERVICES
 \*------------------------------------*/
+.service-block {
+    margin-bottom: 0;
+}
 .service-box {
     margin-bottom: 80px !important;
 }
@@ -482,4 +488,75 @@ p {
     color: #292f36;
     font-size: 17px;
     font-family: 'quattrocentosans-bold';
+}
+@media (max-width: 767px) {
+    .service-box {
+        margin-bottom: 50px !important;
+    }
+}
+/*------------------------------------*\
+    FEATURES
+\*------------------------------------*/
+.features-block {
+    margin-top: 0;
+}
+.features-img-box {
+    margin-bottom: 55px;
+}
+.features-title {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'quattrocentosans-bold';
+}
+.features-descr {
+    color: #dcdfe1;
+}
+@media (max-width: 767px) {
+    .features-block {
+        padding-bottom: 0;
+    }
+    .features-box {
+        margin-bottom: 50px !important;
+    }
+    .features-img-box {
+        margin-bottom: 30px;
+    }
+    .features-title {
+        margin-bottom: 10px;
+    }
+}
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+.main-footer {
+    background: #3a454d;
+    padding: 40px 0 32px;
+}
+.footer-descr {
+    font-size: 14px;
+}
+.footer-social-list {
+    margin-bottom: 0 !important;
+    text-align: right;
+}
+.footer-social-list li {
+    float: none;
+    display: inline-block;
+}
+.footer-social-list li a {
+    margin: 0 8px;
+    padding: 0;
+    background: transparent;
+    font-size: 16px;
+}
+@media (max-width: 479px) {
+    .footer-descr {
+        text-align: center;
+    }
+    .footer-social-list {
+        text-align: center;
+        margin-top: 20px;
+    }
 }
