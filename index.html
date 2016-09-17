@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- IMPORTANT METAS -->
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <title>Modest</title>
+
+    <!-- DYNAMIC METAS -->
+    <meta name="description" content="flat style website" />
+    <meta name="keywords" content="Business, Free, Landing, Portfolio" />
+
+    <!-- STATIC METAS -->
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="1 days" />
+	<meta name="creator" content="Sergo Kupreishvili" />
+    <meta name="generator" content="Sublime text 3" />
+    <meta name="Copyright" content="Sergo Kupreishvili" />
+
+    <!-- FAVICON -->
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+
+	<!-- UIKIT CSS -->
+	<link rel="stylesheet" href="assets/bower_components/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/bower_components/uikit/css/components/slideshow.min.css">
+	<link rel="stylesheet" href="assets/bower_components/uikit/css/components/slidenav.min.css">
+	<link rel="stylesheet" href="assets/bower_components/uikit/css/components/dotnav.min.css">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="assets/bower_components/font-awesome/css/font-awesome.min.css">
+	<!--  CUSTOM CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--  JQUERY JS -->
+	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+	$(window).bind("load", function() {
+	    $("#magic-loader").fadeOut("fast");
+	});
+	</script>
+
+	<!-- UIKIT JS -->
+	<script src="assets/bower_components/uikit/js/uikit.min.js"></script>
+	<script src="assets/bower_components/uikit/js/components/slideshow.min.js"></script>
+	<script src="assets/bower_components/uikit/js/components/slideshow-fx.min.js"></script>
+	<script src="assets/bower_components/uikit/js/components/lightbox.min.js"></script>
+
+	<!-- CUSTOM JS -->
+	<script async src="assets/js/main.js"></script>
+</head>
+<body>
+
+	<!-- FAKE LOADER -->
+	<div id="magic-loader" class="magic-loader"></div>
+	<!-- SITE MAIN WRAP -->
+	<div class="main-wrapper">
+		<!-- HEADER -->
+		<header id="header" class="main-header">
+			<nav class="main-navbar uk-clearfix wrap">
+				<a href="#" class="uk-navbar-brand uk-padding-remove">
+					<img src="assets/images/brand-logo.png" alt="main logo">
+				</a>
+			    <ul class="main-navbar-list uk-navbar-flip uk-hidden-small">
+				    <li>
+				    	<a href="#home" class="current">home</a>
+				    </li>
+				    <li>
+				    	<a href="#about">about</a>
+				    </li>
+				    <li>
+				    	<a href="#work">work</a>
+				    </li>
+				    <li>
+				    	<a href="#team">team</a>
+				    </li>
+				    <li>
+				    	<a href="#services">services</a>
+				    </li>
+				    <li>
+				    	<a href="#features">features</a>
+				    </li>
+				    <li>
+				    	<a href="#contact">contact</a>
+				    </li>
+			    </ul>
+			    <a href="#mobile-menu" class="uk-navbar-toggle uk-visible-small mobile-toggler" data-uk-offcanvas></a>
+			</nav>
+			<!-- mobile offcanvas menu -->
+			<div id="mobile-menu" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar">
+				    <ul class="mobile-menu-list">
+					    <li>
+					    	<a href="#home">home</a>
+					    </li>
+					    <li>
+					    	<a href="#about">about</a>
+					    </li>
+					    <li>
+					    	<a href="#work">work</a>
+					    </li>
+					    <li>
+					    	<a href="#team">team</a>
+					    </li>
+					    <li>
+					    	<a href="#services">services</a>
+					    </li>
+					    <li>
+					    	<a href="#features">features</a>
+					    </li>
+					    <li>
+					    	<a href="#contact">contact</a>
+					    </li>
+				    </ul>
+				</div>
+			</div>
+		</header>
+		<!-- SLIDER -->
+		<div class="main-slider">
+			<div class="uk-slidenav-position" data-uk-slideshow="{ autoplay: false, autoplayInterval: 5000, animation: 'random-fx' }">
+			    <ul class="uk-slideshow uk-overlay-active">
+			        <li>
+			        	<img src="uploads/slider/slider1.jpg" alt="slider image">
+						<div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-left uk-flex-middle uk-padding-remove">
+							<div class="wrap slider-caption-box-wrap">
+								<div class="slider-caption-box">
+									<h3 class="slider-caption-title">welcome to our marketplace</h3>
+									<p class="slider-caption-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
+									<a href="#" class="slider-caption-more">view more</a>
+									<a href="https://www.youtube.com/watch?v=0mvm2FI_xV0&index=12&list=PLAZDV5CFy-XNgzpWvemY1jzl6xIMV0jh9" data-uk-lightbox class="slider-caption-more">see video</a>
+								</div>
+							</div>
+						</div>
+			        </li>
+					<li>
+			        	<img src="uploads/slider/slider2.jpg" alt="bla blaaa">
+						<div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-left uk-flex-middle">
+							<div class="wrap slider-caption-box-wrap">
+								<div class="slider-caption-box wrap">
+									<h3 class="slider-caption-title">Do you heard about Ionic Framework?</h3>
+									<p class="slider-caption-desc uk-hidden-small">Then read this article and enjoy with it</p>
+									<a href="#" class="slider-caption-more">view more</a>
+								</div>
+							</div>
+						</div>
+			        </li>
+			    </ul>
+			    <div class="wrap">
+				    <ul class="uk-dotnav uk-position-bottom uk-flex-right main-slider-dotnav">
+				        <li data-uk-slideshow-item="0"><a href=""></a></li>
+				        <li data-uk-slideshow-item="1"><a href=""></a></li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+		<!-- ABOUT -->
+		<section class="page-block about-block wrap">
+			<h2 class="block-title title-light">we are modest.</h2>
+			<div class="uk-grid">
+			    <div class="uk-width-medium-2-3">
+			    	<div class="about-descr">
+			    		<p>
+			    			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.
+			    		</p>
+			    		<p>
+			    			Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum
+			    		</p>
+			    	</div>
+			    	<ul class="social-list uk-clearfix">
+			    		<li>
+			    			<a href="#">
+			    				<i class="fa fa-facebook"></i>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a href="#">
+			    				<i class="fa fa-twitter"></i>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a href="#">
+			    				<i class="fa fa-google"></i>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a href="#">
+			    				<i class="fa fa-dribbble"></i>
+			    			</a>
+			    		</li>
+			    		<li>
+			    			<a href="#">
+			    				<i class="fa fa-behance"></i>
+			    			</a>
+			    		</li>
+			    	</ul>
+			    </div>
+			    <div class="uk-width-medium-1-3">
+			    	<div class="news-timeline-item">
+			    		<div class="uk-float-left">
+			    			<time datetime="2011-01-12" class="uk-flex uk-flex-center uk-flex-middle news-date">01</time>
+			    		</div>
+			    		<div class="uk-flex">
+					    	<article>
+							  	<header>
+							    	<h3 class="news-heading">
+							    		<a href="#">Dedication to the customers
+							    		</a>
+							    	</h3>
+							  	</header>
+							  	<p class="news-descr">
+							  		Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus.
+							  	</p>
+							</article>
+						</div>
+					</div>
+					<div class="news-timeline-item">
+			    		<div class="uk-float-left">
+			    			<time datetime="2011-02-12" class="uk-flex uk-flex-center uk-flex-middle news-date">02</time>
+			    		</div>
+			    		<div class="uk-flex">
+					    	<article>
+							  	<header>
+							    	<h3 class="news-heading">
+							    		<a href="#">Dedication to the customers
+							    		</a>
+							    	</h3>
+							  	</header>
+							  	<p class="news-descr">
+							  		Integer vel lacus non dui ullamcorper venenatis. Nam porttitor blandit ultricies.
+							  	</p>
+							</article>
+						</div>
+					</div>
+					<div class="news-timeline-item">
+			    		<div class="uk-float-left">
+			    			<time datetime="2011-03-12" class="uk-flex uk-flex-center uk-flex-middle news-date">03</time>
+			    		</div>
+			    		<div class="uk-flex">
+					    	<article>
+							  	<header>
+							    	<h3 class="news-heading">
+							    		<a href="#">Dedication to the customers
+							    		</a>
+							    	</h3>
+							  	</header>
+							  	<p class="news-descr">
+							  		Integer vel lacus non dui ullamcorper venenatis.
+							  	</p>
+							</article>
+						</div>
+					</div>
+			    </div>
+			</div>
+		</section>
+		<hr class="page-blocks-row">
+		<!-- TEAM -->
+		<section class="page-block team-block wrap">
+			<h2 class="block-title title-light">meet the team.</h2>
+			<div class="uk-grid">
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<figure class="team-member-box">
+			    		<div class="team-member-img-box">
+			    			<img src="uploads/team/pic.jpg" class="team-member-img" alt="team member">
+			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
+			    				<li>
+					    			<a href="#">&#70;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#76;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#71;</a>
+					    		</li>
+			    			</ul>
+			    		</div>
+			    		<figcaption class="team-member-caption">
+			    			<h4 class="team-member-name">Gloria Bromley</h4>
+			    			<cite class="team-member-position">CEO and Founder</cite>
+			    		</figcaption>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<figure class="team-member-box">
+			    		<div class="team-member-img-box">
+			    			<img src="uploads/team/pic2.jpg" class="team-member-img" alt="team member">
+			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
+			    				<li>
+					    			<a href="#">&#70;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#76;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#71;</a>
+					    		</li>
+			    			</ul>
+			    		</div>
+			    		<figcaption class="team-member-caption">
+			    			<h4 class="team-member-name">Gloria Bromley</h4>
+			    			<cite class="team-member-position">CEO and Founder</cite>
+			    		</figcaption>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<figure class="team-member-box">
+			    		<div class="team-member-img-box">
+			    			<img src="uploads/team/pic3.jpg" class="team-member-img" alt="team member">
+			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
+			    				<li>
+					    			<a href="#">&#70;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#76;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#71;</a>
+					    		</li>
+			    			</ul>
+			    		</div>
+			    		<figcaption class="team-member-caption">
+			    			<h4 class="team-member-name">Gloria Bromley</h4>
+			    			<cite class="team-member-position">CEO and Founder</cite>
+			    		</figcaption>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<figure class="team-member-box">
+			    		<div class="team-member-img-box">
+			    			<img src="uploads/team/pic4.jpg" class="team-member-img" alt="team member">
+			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
+			    				<li>
+					    			<a href="#">&#70;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#76;</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">&#71;</a>
+					    		</li>
+			    			</ul>
+			    		</div>
+			    		<figcaption class="team-member-caption">
+			    			<h4 class="team-member-name">Gloria Bromley</h4>
+			    			<cite class="team-member-position">CEO and Founder</cite>
+			    		</figcaption>
+			    	</figure>
+			    </div>
+			</div>
+		</section>
+		<!-- WORK -->
+		<section class="page-block page-block-dark work-block wrap">
+			<h2 class="block-title title-dark">lovely work.</h2>
+			<div class="uk-grid">
+			    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+			    	<figure class="work-box">
+			    		<div class="work-img-box">
+			    			<img src="uploads/work/pic.jpg" class="work-img" alt="team member">
+			    			<a href="#" title="site title">
+			    				<div class="work-link uk-flex uk-flex-center uk-flex-middle">
+			    					<span class="work-link-icon">&#10011;</span>
+			    				</div>
+				    			<figcaption class="work-caption">
+				    				<h4 class="work-title">
+				    					partnership guidlines
+				    				</h4>
+				    			</figcaption>
+				    		</a>
+			    		</div>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+			    	<figure class="work-box">
+			    		<div class="work-img-box">
+			    			<img src="uploads/work/pic2.jpg" class="work-img" alt="team member">
+			    			<a href="#" title="site title">
+			    				<div class="work-link uk-flex uk-flex-center uk-flex-middle">
+			    					<span class="work-link-icon">&#10011;</span>
+			    				</div>
+				    			<figcaption class="work-caption">
+				    				<h4 class="work-title">
+				    					partnership guidlines
+				    				</h4>
+				    			</figcaption>
+				    		</a>
+			    		</div>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+			    	<figure class="work-box">
+			    		<div class="work-img-box">
+			    			<img src="uploads/work/pic3.jpg" class="work-img" alt="team member">
+			    			<a href="#" title="site title">
+			    				<div class="work-link uk-flex uk-flex-center uk-flex-middle">
+			    					<span class="work-link-icon">&#10011;</span>
+			    				</div>
+				    			<figcaption class="work-caption">
+				    				<h4 class="work-title">
+				    					partnership guidlines
+				    				</h4>
+				    			</figcaption>
+				    		</a>
+			    		</div>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+			    	<figure class="work-box">
+			    		<div class="work-img-box">
+			    			<img src="uploads/work/pic4.jpg" class="work-img" alt="team member">
+			    			<a href="#" title="site title">
+			    				<div class="work-link uk-flex uk-flex-center uk-flex-middle">
+			    					<span class="work-link-icon">&#10011;</span>
+			    				</div>
+				    			<figcaption class="work-caption">
+				    				<h4 class="work-title">
+				    					partnership guidlines
+				    				</h4>
+				    			</figcaption>
+				    		</a>
+			    		</div>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+			    	<figure class="work-box">
+			    		<div class="work-img-box">
+			    			<img src="uploads/work/pic5.jpg" class="work-img" alt="team member">
+			    			<a href="#" title="site title">
+			    				<div class="work-link uk-flex uk-flex-center uk-flex-middle">
+			    					<span class="work-link-icon">&#10011;</span>
+			    				</div>
+				    			<figcaption class="work-caption">
+				    				<h4 class="work-title">
+				    					partnership guidlines
+				    				</h4>
+				    			</figcaption>
+				    		</a>
+			    		</div>
+			    	</figure>
+			    </div>
+			    <div class="uk-width-small-1-2 uk-width-medium-1-3">
+			    	<figure class="work-box">
+			    		<div class="work-img-box">
+			    			<img src="uploads/work/pic6.jpg" class="work-img" alt="team member">
+			    			<a href="#" title="site title">
+			    				<div class="work-link uk-flex uk-flex-center uk-flex-middle">
+			    					<span class="work-link-icon">&#10011;</span>
+			    				</div>
+				    			<figcaption class="work-caption">
+				    				<h4 class="work-title">
+				    					partnership guidlines
+				    				</h4>
+				    			</figcaption>
+				    		</a>
+			    		</div>
+			    	</figure>
+			    </div>
+			</div>
+			<button type="button" class="work-show-more">
+				show more
+			</button>
+		</section>
+		<!-- SERVICES -->
+		<section class="page-block service-block wrap">
+			<h2 class="block-title title-light">what we do.</h2>
+			<div class="uk-grid">
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-cog service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-pencil service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-mobile service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-clock-o service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-cog service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-pencil service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-mobile service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
+			    	<div class="service-box">
+			    		<div class="service-icon-box">
+			    			<i class="fa fa-clock-o service-icon"></i>
+			    		</div>
+			    		<h4 class="service-title">
+			    			Easy theme Setup
+			    		</h4>
+			    		<p class="service-descr">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+			    	</div>
+			    </div>
+			</div>
+		</section>
+	</div>
+
+</body>
+</html>
