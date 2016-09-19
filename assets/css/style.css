@@ -231,16 +231,15 @@ a, a:hover, a:focus, a:active {
 /*------------------------------------*\
     PAGE BLOCKS
 \*------------------------------------*/
-.page-block {
+.page-block-light {
     padding-top: 80px;
-}
-.page-block-margin-b {
     margin-bottom: 100px;
+    background: #fff;
 }
 .page-block-dark {
-    background: #3a454d;
     padding-top: 80px;
     padding-bottom: 60px;
+    background: #3a454d;
 }
 .block-title {
     margin-bottom: 60px;
@@ -263,13 +262,11 @@ a, a:hover, a:focus, a:active {
     border-top: 1px solid #dde1e4;
 }
 @media (max-width: 767px) {
-    .page-block {
+    .page-block-light {
         padding-top: 50px;
-    }
-    .page-block-margin-b {
         margin-bottom: 50px;
     }
-    .page-block-padding-top, .page-block-dark {
+    .page-block-dark {
         padding-top: 50px;
     }
     .block-title {
