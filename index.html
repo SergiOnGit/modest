@@ -46,9 +46,6 @@
 	<script src="assets/bower_components/uikit/js/components/slideshow.min.js"></script>
 	<script src="assets/bower_components/uikit/js/components/slideshow-fx.min.js"></script>
 	<script src="assets/bower_components/uikit/js/components/lightbox.min.js"></script>
-
-	<!-- CUSTOM JS -->
-	<script async src="assets/js/main.js"></script>
 </head>
 <body>
 
@@ -59,21 +56,21 @@
 		<!-- HEADER -->
 		<header id="header" class="main-header">
 			<nav class="main-navbar uk-clearfix wrap">
-				<a href="#" class="uk-navbar-brand uk-padding-remove">
+				<a href="#" data-uk-smooth-scroll="{offset: 90}" class="uk-navbar-brand uk-padding-remove">
 					<img src="assets/images/brand-logo.png" alt="main logo">
 				</a>
-			    <ul class="main-navbar-list uk-navbar-flip uk-hidden-small">
+			    <ul class="main-navbar-list uk-navbar-flip uk-hidden-small" data-uk-scrollspy-nav="{closest:'li', smoothscroll:{offset:90}}">
 				    <li>
-				    	<a href="#home" class="current">home</a>
+				    	<a href="#home">home</a>
 				    </li>
 				    <li>
 				    	<a href="#about">about</a>
 				    </li>
 				    <li>
-				    	<a href="#work">work</a>
+				    	<a href="#team">team</a>
 				    </li>
 				    <li>
-				    	<a href="#team">team</a>
+				    	<a href="#work">work</a>
 				    </li>
 				    <li>
 				    	<a href="#services">services</a>
@@ -90,7 +87,7 @@
 			<!-- mobile offcanvas menu -->
 			<div id="mobile-menu" class="uk-offcanvas">
 				<div class="uk-offcanvas-bar">
-				    <ul class="mobile-menu-list">
+				    <ul class="mobile-menu-list" data-uk-scrollspy-nav="{closest:'li', smoothscroll:{offset:90}}">
 					    <li>
 					    	<a href="#home">home</a>
 					    </li>
@@ -98,10 +95,10 @@
 					    	<a href="#about">about</a>
 					    </li>
 					    <li>
-					    	<a href="#work">work</a>
+					    	<a href="#team">team</a>
 					    </li>
 					    <li>
-					    	<a href="#team">team</a>
+					    	<a href="#work">work</a>
 					    </li>
 					    <li>
 					    	<a href="#services">services</a>
@@ -117,7 +114,7 @@
 			</div>
 		</header>
 		<!-- SLIDER -->
-		<div class="main-slider">
+		<div id="home" class="main-slider">
 			<div class="uk-slidenav-position" data-uk-slideshow="{ autoplay: false, autoplayInterval: 5000, animation: 'random-fx' }">
 			    <ul class="uk-slideshow uk-overlay-active">
 			        <li>
@@ -155,7 +152,7 @@
 			</div>
 		</div>
 		<!-- ABOUT -->
-		<section class="page-block about-block page-block-padding-top wrap">
+		<section id="about" class="page-block page-block-margin-b about-block wrap">
 			<h2 class="block-title title-light">we are modest.</h2>
 			<div class="uk-grid">
 			    <div class="uk-width-medium-2-3">
@@ -255,7 +252,7 @@
 		<!-- DIVIDER ROW -->
 		<hr class="page-blocks-row">
 		<!-- TEAM -->
-		<section class="page-block team-block page-block-padding-top wrap">
+		<section id="team" class="page-block page-block-margin-b team-block wrap">
 			<h2 class="block-title title-light">meet the team.</h2>
 			<div class="uk-grid">
 			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
@@ -264,13 +261,19 @@
 			    			<img src="uploads/team/pic.jpg" class="team-member-img" alt="team member">
 			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
 			    				<li>
-					    			<a href="#">&#70;</a>
+					    			<a href="#">
+					    				<i class="fa fa-facebook"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#76;</a>
+					    			<a href="#">
+					    				<i class="fa fa-twitter"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#71;</a>
+					    			<a href="#">
+					    				<i class="fa fa-google"></i>
+					    			</a>
 					    		</li>
 			    			</ul>
 			    		</div>
@@ -286,13 +289,19 @@
 			    			<img src="uploads/team/pic2.jpg" class="team-member-img" alt="team member">
 			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
 			    				<li>
-					    			<a href="#">&#70;</a>
+					    			<a href="#">
+					    				<i class="fa fa-facebook"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#76;</a>
+					    			<a href="#">
+					    				<i class="fa fa-twitter"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#71;</a>
+					    			<a href="#">
+					    				<i class="fa fa-google"></i>
+					    			</a>
 					    		</li>
 			    			</ul>
 			    		</div>
@@ -308,13 +317,19 @@
 			    			<img src="uploads/team/pic3.jpg" class="team-member-img" alt="team member">
 			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
 			    				<li>
-					    			<a href="#">&#70;</a>
+					    			<a href="#">
+					    				<i class="fa fa-facebook"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#76;</a>
+					    			<a href="#">
+					    				<i class="fa fa-twitter"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#71;</a>
+					    			<a href="#">
+					    				<i class="fa fa-google"></i>
+					    			</a>
 					    		</li>
 			    			</ul>
 			    		</div>
@@ -330,13 +345,19 @@
 			    			<img src="uploads/team/pic4.jpg" class="team-member-img" alt="team member">
 			    			<ul class="team-member-social uk-flex uk-flex-center uk-flex-middle">
 			    				<li>
-					    			<a href="#">&#70;</a>
+					    			<a href="#">
+					    				<i class="fa fa-facebook"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#76;</a>
+					    			<a href="#">
+					    				<i class="fa fa-twitter"></i>
+					    			</a>
 					    		</li>
 					    		<li>
-					    			<a href="#">&#71;</a>
+					    			<a href="#">
+					    				<i class="fa fa-google"></i>
+					    			</a>
 					    		</li>
 			    			</ul>
 			    		</div>
@@ -349,7 +370,7 @@
 			</div>
 		</section>
 		<!-- WORK -->
-		<section class="page-block work-block page-block-dark">
+		<section id="work" class="page-block work-block page-block-dark">
 			<div class="wrap">
 				<h2 class="block-title title-dark">lovely work.</h2>
 				<div class="uk-grid">
@@ -462,7 +483,7 @@
 			</div>
 		</section>
 		<!-- SERVICES -->
-		<section class="page-block service-block wrap">
+		<section id="services" class="page-block service-block wrap">
 			<h2 class="block-title title-light">what we do.</h2>
 			<div class="uk-grid">
 			    <div class="uk-width-medium-1-4 uk-width-small-1-2">
@@ -556,7 +577,7 @@
 			</div>
 		</section>
 		<!-- FEATURES -->
-		<section class="page-block features-block page-block-dark">
+		<section id="features" class="page-block features-block page-block-dark">
 			<div class="wrap">
 				<h2 class="block-title title-dark">features.</h2>
 				<div class="uk-grid">
@@ -609,7 +630,7 @@
 			</div>
 		</section>
 		<!-- CONTACT -->
-		<section class="page-block contact-block">
+		<section id="contact" class="page-block page-block-margin-b contact-block">
 			<div class="wrap">
 				<h2 class="block-title title-light">stay in touch.</h2>
 			</div>
@@ -640,7 +661,7 @@
 									<input type="text" name="name" class="contact-form-field">
 								</div>
 								<div class="uk-width-1-2">
-									<label class="contact-form-field-label">name</label>
+									<label class="contact-form-field-label">email</label>
 									<input type="email" name="email" class="contact-form-field">
 								</div>
 							</div>
