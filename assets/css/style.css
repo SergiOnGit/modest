@@ -121,7 +121,7 @@ a, a:hover, a:focus, a:active {
 	color: #fff;
 }
 .mobile-menu-list {
-    border-top: 15px solid #4e4e4e;
+    border-top: 15px solid #fff;
 }
 .mobile-menu-list a {
     padding: 15px 20px;
@@ -259,7 +259,10 @@ a, a:hover, a:focus, a:active {
 }
 @media (max-width: 767px) {
     .page-block {
-        margin-bottom: 60px;
+        padding-top: 50px;
+    }
+    .page-block-margin-b {
+        margin-bottom: 50px;
     }
     .page-block-padding-top, .page-block-dark {
         padding-top: 50px;
@@ -579,6 +582,14 @@ a, a:hover, a:focus, a:active {
         margin-top: 40px;
         padding-top: 40px;
         border-top: 1px solid #d8d8d8;
+    }
+}
+@media (max-width: 479px) {
+    .contact-form-field-label {
+        margin: 10px 0 10px 5px;
+    }
+    .contact-msg-box {
+        margin: 0 0 30px;
     }
 }
 /*------------------------------------*\
