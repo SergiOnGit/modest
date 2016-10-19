@@ -36,6 +36,12 @@
 	<!--  JQUERY JS -->
 	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
 	</script>
+	<script>
+	$(window).bind("load", function() {
+	    $("#magic-loader").fadeOut("fast");
+	    $("#main-wrapper").fadeIn("slow");
+	});
+  	</script>
 
 	<!-- UIKIT JS -->
 	<script src="assets/bower_components/uikit/js/uikit.min.js"></script>
@@ -45,8 +51,11 @@
 </head>
 <body>
 
+	<!-- FAKE LOADER -->
+	<div id="magic-loader" class="magic-loader"></div>
+
 	<!-- SITE MAIN WRAP -->
-	<div class="main-wrapper">
+	<div id="main-wrapper" class="main-wrapper">
 		<!-- HEADER -->
 		<header id="header" class="main-header">
 			<nav class="main-navbar uk-clearfix wrap">
